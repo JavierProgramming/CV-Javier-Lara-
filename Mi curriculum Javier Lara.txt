@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .experience, .education, .skills {
+            margin-left: 20px;
+        }
+        .experience .job, .education .school, .skills .skill {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>javier Eduardo Lara Garcia</h1>
+            <p>Correo electrónico: JavierLara@gmail.com | Teléfono: 502 5000 7335 </p>
+        </header>
+        <section class="section">
+            <h2>Resumen</h2>
+            <p>  Soy un estudiante de primer año de Desarollo de software y un profesional en desarollo. Me destaco por mi constante deseo de aprender y crecer en mi carrera. Soy altamente responsable y puntual, con una actitud proativa que me permite abordar desafios con creatividad y encontrar nuevas formas de mejorar. 
+              Disfruto trabajar en equipo y soy una persona adaptable que siempre esta dispuesta a aprender. Apoyo en actividades administrativas, archivo, elaboración de documentos, reportes en Excel.</p>
+        </section>
+        <section class="section experience">
+            <h2>Experiencia Laboral</h2>
+            <div class="job">
+                <h3>Auxiliar administrativo , Max Servicios zona 10 </h3>
+                <p><em>Fecha de inicio: septiembre 2023 - Fecha de finalización: Noviembre 2023.</em></p>
+                <p> Desempeñe mis practicas en el departamento de Adminstración de ventas y de contabilidad </p>
+            </div>
+            <!-- Agrega más trabajos aquí si es necesario -->
+        </section>
+        <section class="section education">
+            <h2>Educación</h2>
+            <div class="school">
+                <h3>Formación academica</h3>
+                <p><em>Universidad Galileo Primer Trimestre, 2024,Tecnico de desarrollo de software </em></p>
+                <p>BACHILLER EN CIENCIAS Y LETRAS CON ORIENTACIÓN EN COMPUTACIÓN 
+              colegio Ciencia y Arte 2022-2023</p>
+              <he> Certificaciones:<he/>
+                <p> -Curso de programación Basica (Noviembre 2022)<p/>
+                <p> -Excel Desde cero-Nivel basico y intermedio-Udemy(Diciembre 2023)
+                
+            </div>
+            <!-- Agrega más instituciones educativas aquí si es necesario -->
+        </section>
+        <section class="section skills">
+            <h2>Conocimientos </h2>
+            <div class="skill">
+                <h3>1. office 365</h3>
+               <h3> 2. Power point</h3>
+              <h3> 3. Power BI<h3/>
+                <he> 4. Excel <he/>
+                <p>Descripción breve de la habilidad.</p>
+            </div>
+            <!-- Agrega más habilidades aquí si es necesario -->
+        </section>
+    </div>
+</body>
+</html>
