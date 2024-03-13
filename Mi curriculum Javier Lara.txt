@@ -3,82 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
+    <title>Mi Currículum</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        .container {
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
             max-width: 800px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
-            margin-top: 0;
+
+        h1, h2 {
+            color: #333;
         }
-        .section {
+
+        .info {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
         }
-        .experience, .education, .skills {
-            margin-left: 20px;
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
         }
-        .experience .job, .education .school, .skills .skill {
-            margin-bottom: 10px;
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>javier Eduardo Lara Garcia</h1>
-            <p>Correo electrónico: JavierLara@gmail.com | Teléfono: 502 5000 7335 </p>
-        </header>
-        <section class="section">
-            <h2>Resumen</h2>
-            <p>  Soy un estudiante de primer año de Desarollo de software y un profesional en desarollo. Me destaco por mi constante deseo de aprender y crecer en mi carrera. Soy altamente responsable y puntual, con una actitud proativa que me permite abordar desafios con creatividad y encontrar nuevas formas de mejorar. 
-              Disfruto trabajar en equipo y soy una persona adaptable que siempre esta dispuesta a aprender. Apoyo en actividades administrativas, archivo, elaboración de documentos, reportes en Excel.</p>
-        </section>
-        <section class="section experience">
-            <h2>Experiencia Laboral</h2>
-            <div class="job">
-                <h3>Auxiliar administrativo , Max Servicios zona 10 </h3>
-                <p><em>Fecha de inicio: septiembre 2023 - Fecha de finalización: Noviembre 2023.</em></p>
-                <p> Desempeñe mis practicas en el departamento de Adminstración de ventas y de contabilidad </p>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>javier Eduardo Lara García</p>
             </div>
-            <!-- Agrega más trabajos aquí si es necesario -->
-        </section>
-        <section class="section education">
-            <h2>Educación</h2>
-            <div class="school">
-                <h3>Formación academica</h3>
-                <p><em>Universidad Galileo Primer Trimestre, 2024,Tecnico de desarrollo de software </em></p>
-                <p>BACHILLER EN CIENCIAS Y LETRAS CON ORIENTACIÓN EN COMPUTACIÓN 
-              colegio Ciencia y Arte 2022-2023</p>
-              <he> Certificaciones:<he/>
-                <p> -Curso de programación Basica (Noviembre 2022)<p/>
-                <p> -Excel Desde cero-Nivel basico y intermedio-Udemy(Diciembre 2023)
-                
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>JavierLara@gmail.com</p>
             </div>
-            <!-- Agrega más instituciones educativas aquí si es necesario -->
-        </section>
-        <section class="section skills">
-            <h2>Conocimientos </h2>
-            <div class="skill">
-                <h3>1. office 365</h3>
-               <h3> 2. Power point</h3>
-              <h3> 3. Power BI<h3/>
-                <he> 4. Excel <he/>
-                <p>Descripción breve de la habilidad.</p>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(675) 5678-4567</p>
             </div>
-            <!-- Agrega más habilidades aquí si es necesario -->
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <section>
+        <h2> Resumen </h2>
+        <div>
+            <p>Soy un estudiante de primer año de Desarollo de software y un profesional en desarollo. Me destaco por mi constante deseo de aprender y crecer en mi carrera. Soy altamente responsable y puntual, con una actitud proativa que me permite abordar desafios con creatividad y encontrar nuevas formas de mejorar. Disfruto trabajar en equipo y soy una persona adaptable que siempre esta dispuesta a aprender. Apoyo en actividades administrativas, archivo, elaboración de documentos, reportes en Excel.</p>
+            <ul>
+                <li>habilidades: Responsable,puntual,Creativo</li>
+                <li>Debilidades: Me cuesta rechazar a la gente, A veces me falta confianza. </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Experiencia Laboral</h3>
+            <p>Auxiliar administrativo , Max Servicios zona 10</p>
+            <ul>
+                <li>Fecha de inicio: septiembre 2023 - Fecha de finalización: Noviembre 2023.
+
+Desempeñe mis practicas en el departamento de Adminstración de ventas y de contabilidad</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Formación academica</h3>
+            <p>Universidad Galileo Primer Trimestre, 2024,Tecnico de desarrollo de software
+
+BACHILLER EN CIENCIAS Y LETRAS CON ORIENTACIÓN EN COMPUTACIÓN colegio Ciencia y Arte 2022-2023
+
+Certificaciones:
+-Curso de programación Basica (Noviembre 2022)
+
+-Excel Desde cero-Nivel basico y intermedio-Udemy(Diciembre 2023)</p>
+            <p>Conocimientos
+<p> 1. office 365 <p/>
+<p> 2. Power point<p/>
+<P> 3.Power BI <p/>
+<p> 4. Excel <p/>
+Descripción breve de la habilidad.</p>
+        </div>
+    </section>
 </body>
 </html>
